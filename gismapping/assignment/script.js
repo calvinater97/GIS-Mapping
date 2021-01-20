@@ -1002,5 +1002,99 @@ const finished = new FeatureLayer({
   view.when(function() {
     map.add(finished);
   });
+
+  //22th layer
+var features = [
+  {
+    geometry: {
+      type: "point",
+      x: -115.379876,
+      y: 51.055160
+    },
+    attributes: {
+      ObjectID: 1,
+      DepArpt: "KATL",
+      MsgTime: Date.now(),
+      FltId: "UAL1"
+    }
+  },
+ ];
+const ice = new FeatureLayer({
+  source: features,  // array of graphics objects
+  objectIdField: "OBJECTID",
+  fields: [{
+    name: "OBJECTID",
+    type: "oid"
+  }, {
+    name: "url",
+    type: "string"
+  }],
+  popupTemplate: {
+      title: "Canmore Wall - Ice Climbing",
+      content: "This location offers great ice climbing and adds a twist to normal rock climbing."
+  },
+  renderer: {  // overrides the layer's default renderer
+    type: "simple",
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue62d",
+      font: {
+        size: 20,
+        family: "CalciteWebCoreIcons"
+      }
+    }
+  }
+});
+view.when(function() {
+  map.add(ice);
+});
+
+//23th layer
+var features = [
+  {
+    geometry: {
+      type: "point",
+      x: -107.658457,
+      y: 38.025174
+    },
+    attributes: {
+      ObjectID: 1,
+      DepArpt: "KATL",
+      MsgTime: Date.now(),
+      FltId: "UAL1"
+    }
+  },
+ ];
+const iice = new FeatureLayer({
+  source: features,  // array of graphics objects
+  objectIdField: "OBJECTID",
+  fields: [{
+    name: "OBJECTID",
+    type: "oid"
+  }, {
+    name: "url",
+    type: "string"
+  }],
+  popupTemplate: {
+      title: "Ouray - Ice Climbing",
+      content: "This location offers great ice climbing during those cold winter months but in the summer there is also good routes for climbing."
+  },
+  renderer: {  // overrides the layer's default renderer
+    type: "simple",
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue62d",
+      font: {
+        size: 20,
+        family: "CalciteWebCoreIcons"
+      }
+    }
+  }
+});
+view.when(function() {
+  map.add(iice);
+});
       
 });

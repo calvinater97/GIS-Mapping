@@ -17,6 +17,7 @@
 
 * [Mountain Project](https://www.mountainproject.com/)
 * [Apple Maps](https://www.apple.com/maps/)
+* [National Geographic](https://www.nationalgeographic.com/adventure/adventure-blog/2011/02/15/top-five-adventurers-ice-climber-will-gadds-favorite-places/#close)
 
 # Future Work
 
