@@ -955,5 +955,52 @@ const llllayer = new FeatureLayer({
   view.when(function() {
     map.add(llllayer);
   });
+
+  //21th layer
+var features = [
+    {
+      geometry: {
+        type: "point",
+        x: -91.434443,
+        y: 45.511594
+      },
+      attributes: {
+        ObjectID: 1,
+        DepArpt: "KATL",
+        MsgTime: Date.now(),
+        FltId: "UAL1"
+      }
+    },
+   ];
+const finished = new FeatureLayer({
+    source: features,  // array of graphics objects
+    objectIdField: "OBJECTID",
+    fields: [{
+      name: "OBJECTID",
+      type: "oid"
+    }, {
+      name: "url",
+      type: "string"
+    }],
+    popupTemplate: {
+        title: "Blue Hills",
+        content: "This area offers great top rope set ups that allow you to do some fun hiking as you explore the area more."
+    },
+    renderer: {  // overrides the layer's default renderer
+      type: "simple",
+      symbol: {
+        type: "text",
+        color: "#7A003C",
+        text: "\ue60a",
+        font: {
+          size: 20,
+          family: "CalciteWebCoreIcons"
+        }
+      }
+    }
+  });
+  view.when(function() {
+    map.add(finished);
+  });
       
 });
