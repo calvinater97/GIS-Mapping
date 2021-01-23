@@ -8,8 +8,7 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-* In order for me to develop this software I used the ArcGIS library which provided me with examples of code and also walkthroughs of how I can the software to the point it is today.  The programming language that I used is Javascript mainly and also have a little html and css.
+* In order for me to develop this software I used the ArcGIS library which provided me with examples of code and also walkthroughs of how I can the software to the point it is today.  I was able to find some code that allowed me to create a custom layer which I used for my code and then edited it to make it work for my map.  The programming language that I used is Javascript mainly and also have a little html and css.
 
 # Useful Websites
 
